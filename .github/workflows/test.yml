@@ -1,0 +1,16 @@
+name: Build Migrate Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Push Migrate Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: show the repo name
+        run: | 
+          echo "${{ github.event.repository.name }}"
+
