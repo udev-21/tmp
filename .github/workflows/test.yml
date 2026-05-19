@@ -13,4 +13,10 @@ jobs:
       - name: show the repo name
         run: | 
           echo "${{ toJson(github) }}"
+      - name: show the repo name
+        run: | 
+          echo "${{ github.repository }}"
+      - name: show the repo name
+        run: | 
+          echo "${{ toJson(github.repository) }}"
 
