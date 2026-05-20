@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-    tags:
-      - "^\d+\.\d+\.\d+$"
+    tags: "*"
   pull_request:
 
 jobs:
